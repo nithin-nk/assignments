@@ -5,7 +5,11 @@
 */
 
 function isAnagram(str1, str2) {
+  return str1 === str2;
 
 }
+const a = "spar";
+const b = "rasp";
+console.log(isAnagram(a,b));
 
 module.exports = isAnagram;
