@@ -5,7 +5,11 @@
 */
 
 function isAnagram(str1, str2) {
-  return str1 === str2;
+  
+  const cleanStr = (str) => str.replace(/[^\w]/g,'').toLowerCase();
+  const sortedstr1  = cleanStr(str1).split('').sort().join('');
+  const sortedstr2  = cleanStr(str2).split('').sort().join('');
+  return sortedstr1 === sortedstr2;
 
 }
 const a = "spar";
