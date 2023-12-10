@@ -14,6 +14,33 @@
 */
 
 function calculateTotalSpentByCategory(transactions) {
+  const trans = [{
+    id:1,
+    timestamp:1659590,
+    price: 15,
+    category:'food',
+    itemnane:'pizza'
+    },{
+      id:2,
+      timestamp:243234,
+      price:18,
+      category:'drink',
+      itemname:'coke'
+    },{
+      id:3,
+      timestamp:7475757,
+      price:89,
+      category:'toys',
+      itemname:'car'
+
+    }]
+    for(const j of trans){
+      for(const i of trans){
+        if(j.category == (i+1).category ){
+          console.log()
+        }
+      }
+    }
   return [];
 }
 
